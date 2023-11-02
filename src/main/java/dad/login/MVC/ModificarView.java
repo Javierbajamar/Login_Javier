@@ -1,7 +1,6 @@
 package dad.login.MVC;
 
 
-import com.sun.javafx.menu.MenuItemBase;
 import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -102,7 +101,6 @@ public class ModificarView extends VBox {
         System.out.println("Cancelar");
 
     }
-
 
 
 }

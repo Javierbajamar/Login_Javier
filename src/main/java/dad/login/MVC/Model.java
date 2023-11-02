@@ -1,5 +1,7 @@
 package dad.login.MVC;
 
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -7,18 +9,18 @@ public class Model {
 
     private StringProperty usuario = new SimpleStringProperty();
     private StringProperty contrasena = new SimpleStringProperty();
-    private StringProperty ldap = new SimpleStringProperty();
+    private BooleanProperty ldap = new SimpleBooleanProperty();
 
-    public String getLdap() {
+    public boolean getLdap() {
         return ldap.get();
     }
 
-    public StringProperty ldapProperty() {
+    public BooleanProperty ldapProperty() {
         return ldap;
     }
 
     public void setLdap(String ldap) {
-        this.ldap.set(ldap);
+        this.ldap.set(Boolean.parseBoolean(ldap));
     }
 
     public String getUsuario() {
